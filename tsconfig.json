@@ -7,6 +7,7 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "noUnusedLocals": false,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
