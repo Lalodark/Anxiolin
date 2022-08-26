@@ -1,4 +1,4 @@
-// #### Anxiolin #### \\
+//// #### Anxiolin (｡◕‿◕｡) #### \\\\\\\
 
 Anxiolin es una aplicación móvil desarrollada con Ionic Framework y pensada para ser lanzada para iOS y Android. 
 
@@ -12,7 +12,7 @@ También, se planea agregar un calendario para que el usuario pueda ver si tuvo 
 con que actividades jugó, etc.
 
 
-// #### Ejecutar proyecto (◕‿◕✿) #### \\
+//// #### Ejecutar proyecto (◕‿◕✿) #### \\\\\\\
 
 Ejecutar esta aplicación no es nada dificil, nada más hay que descargar este repositorio, abrirlo en algún editor de texto (Preferiblemente en VS Code) y ejecutar 
 los siguientes comandos:
@@ -42,7 +42,7 @@ la aplicación como si lo estuvieramos corriendo en un dispositivo Android/iOS:
     - ionic cordova emulate ios --list           #Esto nos va a mostrar los dispositivos cargados
     - ionic cordova emulate ios --target=Dispositivo
 
-// #### A FUTURO ಠ_ಠ #### \\
+//// #### A FUTURO ಠ_ಠ #### \\\\\\\
 
 Ok, haciendo y planificando un par de cosas para esta aplicación se me ocurrió OTRA idea que seguramente la termine mechando con la app principal, y es hacer una
 aplicación de salud mental.
