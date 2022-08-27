@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,25 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  public appMenu = [
+    {title: 'Menú', url: '/tabs/menutab', icon: 'home'},
+    {title: 'Calendario', url: '/tabs/calendartab', icon: 'calendar'},
+    {title: 'Actividades', url: '/tabs/activitiestab', icon: 'cube'},
+    {title: 'Perfil', url: '/tabs/profiletab', icon: 'person'}
+  ];
   constructor() {}
+}
+export class MenuEx {
+  constructor(private menu: MenuController) { }
+    openFirst() {
+      this.menu.enable(true, 'first');
+      this.menu.open('first');
+    }
+    openEnd() {
+      this.menu.open('end');
+    }
+    openCustom() {
+      this.menu.enable(true, 'custom');
+      this.menu.open('custom');
+    }
 }
