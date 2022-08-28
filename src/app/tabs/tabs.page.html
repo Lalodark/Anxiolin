@@ -11,7 +11,9 @@
       <ion-label>Calendario</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button></ion-tab-button>
+    <ion-tab-button (click)="onPresentTabsPopover($event)" layout="label-hide">
+      <ion-icon name="alert-circle-outline" color="danger"></ion-icon>
+    </ion-tab-button>
 
     <ion-tab-button tab="activitiestab">
       <ion-icon name="cube-outline"></ion-icon>
@@ -25,10 +27,10 @@
 
   </ion-tab-bar>
   
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <!-- <ion-fab vertical="bottom" horizontal="center" slot="fixed">
     <ion-fab-button color="danger">
       <ion-icon name="alert-circle-outline"></ion-icon>
     </ion-fab-button>
-  </ion-fab>
+  </ion-fab> -->
 
 </ion-tabs>
