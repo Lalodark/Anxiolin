@@ -4,18 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ProfiletabPageRoutingModule } from './profiletab-routing.module';
+import { LoginPageRoutingModule } from './login-routing.module';
 
-import { ProfiletabPage } from './profiletab.page';
-
+import { LoginPage } from './login.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProfiletabPageRoutingModule
+    LoginPageRoutingModule
   ],
-  declarations: [ProfiletabPage]
+  declarations: [LoginPage]
 })
-export class ProfiletabPageModule {}
+export class LoginPageModule {}

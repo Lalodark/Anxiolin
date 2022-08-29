@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CalendarPage } from './calendartab.page';
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { CalendarPageRoutingModule } from './calendartab-routing.module';
 
@@ -13,7 +12,6 @@ import { CalendarPageRoutingModule } from './calendartab-routing.module';
     IonicModule,
     CommonModule,
     FormsModule,
-    ExploreContainerComponentModule,
     CalendarPageRoutingModule
   ],
   declarations: [CalendarPage]
