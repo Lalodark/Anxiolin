@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+
   public appMenu = [
     {title: 'Menú', url: '/tabs/menutab', icon: 'home'},
     {title: 'Calendario', url: '/tabs/calendartab', icon: 'calendar'},
@@ -15,6 +17,7 @@ export class AppComponent {
   ];
   constructor() {}
 }
+
 export class MenuEx {
   constructor(private menu: MenuController) { }
     openFirst() {
