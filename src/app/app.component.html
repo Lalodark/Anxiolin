@@ -4,8 +4,8 @@
       <ion-content>
         <ion-list class="menu-list" no-padding>
           <ion-menu-toggle autoHide="false" *ngFor="let p of appMenu" class="menu-toggle-item">
-            <ion-item [routerLink]="p.url" routerDirection="forward">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+            <ion-item  [routerLink]="p.url" routerDirection="forward">
+              <ion-icon color="primary" slot="start" [name]="p.icon"></ion-icon>
               <ion-label>
                 {{p.title}}
               </ion-label>

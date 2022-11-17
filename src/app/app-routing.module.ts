@@ -6,10 +6,10 @@ const routes: Routes = [
     path: '', 
     loadChildren: () => import('./login-main/login-main.module').then(m => m.LoginMainPageModule)
   },
-  // {
-  //   path: '',
-  //   loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  // },
+  {
+    path: '',
+    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
@@ -21,7 +21,12 @@ const routes: Routes = [
   {
     path: 'login-main',
     loadChildren: () => import('./login-main/login-main.module').then( m => m.LoginMainPageModule)
-  }
+  },  {
+    path: 'meditacion',
+    loadChildren: () => import('./meditacion/meditacion.module').then( m => m.MeditacionPageModule)
+  },
+
+
 ];
 @NgModule({
   imports: [

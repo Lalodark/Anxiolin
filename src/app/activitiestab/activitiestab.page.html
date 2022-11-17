@@ -1,96 +1,602 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button id="title"></ion-menu-button>
     </ion-buttons>
-    <ion-title>
+    <ion-title id="title">
       Actividades
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-modal1">
       <ion-icon name="pulse-outline"></ion-icon>
       <ion-label style="padding-left:10px;">
         Respiración guiada
       </ion-label>
+      <ion-modal trigger="open-modal1">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-button href="/tabs/activitiestab">Volver</ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+              </ion-buttons>
+              <ion-title>Respiración guiada</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label>Preferencia</ion-label>
+              <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+              <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+            </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Duración</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="3">3 minutos</ion-select-option>
+                  <ion-select-option value="5">5 minutos</ion-select-option>
+                  <ion-select-option value="10">10 minutos</ion-select-option>
+                  <ion-select-option value="15">15 minutos</ion-select-option>
+                  <ion-select-option value="20">20 minutos</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Volúmen</ion-label>
+                <ion-range></ion-range>
+              </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Narrador</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="Will">Will</ion-select-option>
+                  <ion-select-option value="Steven">Steven</ion-select-option>
+                  <ion-select-option value="Jessica">Jessica</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <div class="container">
+                <ion-item class="probar" href="/tabs/menutab">
+                  <ion-label color="tertiary">Probar</ion-label>
+                </ion-item>
+              </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-item>
 
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-modal2">
       <ion-icon name="timer-outline"></ion-icon>
       <ion-label style="padding-left:10px;">
-        Contar hacia atrás
+        Contar hacía atrás
       </ion-label>
+      <ion-modal trigger="open-modal2">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-button href="/tabs/activitiestab">Volver</ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+              </ion-buttons>
+              <ion-title>Contar hacía atras</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label>Preferencia</ion-label>
+              <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+              <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+            </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Duración</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="25">25</ion-select-option>
+                  <ion-select-option value="50">50</ion-select-option>
+                  <ion-select-option value="75">75</ion-select-option>
+                  <ion-select-option value="100">100</ion-select-option>
+                  <ion-select-option value="200">200</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <div class="container">
+                <ion-item class="probar" href="/tabs/menutab">
+                  <ion-label color="tertiary">Probar</ion-label>
+                </ion-item>
+              </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-item>
 
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-modal3">
       <ion-icon name="musical-notes-outline"></ion-icon>
       <ion-label style="padding-left:10px;">
         Música relajante
       </ion-label>
+      <ion-modal trigger="open-modal3">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-button href="/tabs/activitiestab">Volver</ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+              </ion-buttons>
+              <ion-title>Música relajante</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label>Preferencia</ion-label>
+              <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+              <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+            </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Volúmen</ion-label>
+                <ion-range></ion-range>
+              </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Duración</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="3">3 minutos</ion-select-option>
+                  <ion-select-option value="5">5 minutos</ion-select-option>
+                  <ion-select-option value="10">10 minutos</ion-select-option>
+                  <ion-select-option value="15">15 minutos</ion-select-option>
+                  <ion-select-option value="20">20 minutos</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <div class="container">
+                <ion-item class="probar" href="/tabs/menutab">
+                  <ion-label color="tertiary">Probar</ion-label>
+                </ion-item>
+              </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-item>
 
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-modal4">
       <ion-icon name="image-outline"></ion-icon>
       <ion-label style="padding-left:10px;">
-        Imagenes relajantes
+        Imágenes relajantes
       </ion-label>
+      <ion-modal trigger="open-modal4">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-button href="/tabs/activitiestab">Volver</ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+              </ion-buttons>
+              <ion-title>Imagenes relajante</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label>Preferencia</ion-label>
+              <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+              <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+            </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Duración</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="15">15 segundos</ion-select-option>
+                  <ion-select-option value="30">30 segundos</ion-select-option>
+                  <ion-select-option value="1">1 minuto</ion-select-option>
+                  <ion-select-option value="2">2 minutos</ion-select-option>
+                  <ion-select-option value="5">5 minutos</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <div class="container">
+                <ion-item class="probar" href="/tabs/menutab">
+                  <ion-label color="tertiary">Probar</ion-label>
+                </ion-item>
+              </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-item>
 
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-modal5">
       <ion-icon name="book-outline"></ion-icon>
       <ion-label style="padding-left:10px;">
         Historias
       </ion-label>
+      <ion-modal trigger="open-modal5">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-button href="/tabs/activitiestab">Volver</ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+              </ion-buttons>
+              <ion-title>Historias</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label>Preferencia</ion-label>
+              <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+              <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+            </ion-item>
+            <ion-item>
+              <ion-label position="stacked">Narrador</ion-label>
+              <ion-select placeholder="Seleccione una opción">
+                <ion-select-option value="Will">Will</ion-select-option>
+                <ion-select-option value="Steven">Steven</ion-select-option>
+                <ion-select-option value="Jessica">Jessica</ion-select-option>
+              </ion-select>
+            </ion-item>
+              <div class="container">
+                <ion-item class="probar" href="/tabs/menutab">
+                  <ion-label color="tertiary">Probar</ion-label>
+                </ion-item>
+              </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-item>
 
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-modal6">
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-label style="padding-left:10px;">
         Cuentas rápidas
       </ion-label>
+      <ion-modal trigger="open-modal6">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-button href="/tabs/activitiestab">Volver</ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+              </ion-buttons>
+              <ion-title>Cuentas rápidas</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label>Preferencia</ion-label>
+              <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+              <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+            </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Dificultad</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="Fácil">Fácil</ion-select-option>
+                  <ion-select-option value="Medio">Medio</ion-select-option>
+                  <ion-select-option value="Dificil">Difícil</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Cantidad</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="10">10</ion-select-option>
+                  <ion-select-option value="20">20</ion-select-option>
+                  <ion-select-option value="50">50</ion-select-option>
+                  <ion-select-option value="100">100</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <div class="container">
+                <ion-item class="probar" href="/tabs/menutab">
+                  <ion-label color="tertiary">Probar</ion-label>
+                </ion-item>
+              </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-item>
 
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-modal7">
       <ion-icon name="walk-outline"></ion-icon>
       <ion-label style="padding-left:10px;">
         Personas en la casa
       </ion-label>
+      <ion-modal trigger="open-modal7">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-button href="/tabs/activitiestab">Volver</ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+              </ion-buttons>
+              <ion-title>Personas en la casa</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label>Preferencia</ion-label>
+              <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+              <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+            </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Dificultad</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="Fácil">Fácil</ion-select-option>
+                  <ion-select-option value="Medio">Medio</ion-select-option>
+                  <ion-select-option value="Dificil">Difícil</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <div class="container">
+                <ion-item class="probar" href="/tabs/menutab">
+                  <ion-label color="tertiary">Probar</ion-label>
+                </ion-item>
+              </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-item>
 
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-model8">
       <ion-icon name="cash-outline"></ion-icon>
       <ion-label style="padding-left:10px;">
         Cambio justo
       </ion-label>
+      <ion-modal trigger="open-modal8">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-button href="/tabs/activitiestab">Volver</ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+              </ion-buttons>
+              <ion-title>Cambio justo</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label>Preferencia</ion-label>
+              <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+              <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+            </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Dificultad</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="Fácil">Fácil</ion-select-option>
+                  <ion-select-option value="Medio">Medio</ion-select-option>
+                  <ion-select-option value="Dificil">Difícil</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Vueltas</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="1">1</ion-select-option>
+                  <ion-select-option value="3">3</ion-select-option>
+                  <ion-select-option value="5">5</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <div class="container">
+                <ion-item class="probar" href="/tabs/menutab">
+                  <ion-label color="tertiary">Probar</ion-label>
+                </ion-item>
+              </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-item>
 
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-modal9">
       <ion-icon name="extension-puzzle-outline"></ion-icon>
       <ion-label style="padding-left:10px;">
         Juego del 15
       </ion-label>
+      <ion-modal trigger="open-modal9">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-button href="/tabs/activitiestab">Volver</ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+              </ion-buttons>
+              <ion-title>Juego del 15</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label>Preferencia</ion-label>
+              <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+              <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+            </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Dificultad</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="Fácil">Fácil</ion-select-option>
+                  <ion-select-option value="Medio">Medio</ion-select-option>
+                  <ion-select-option value="Dificil">Difícil</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Caracteristica</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="letras">Letras</ion-select-option>
+                  <ion-select-option value="numeros">Números</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <div class="container">
+                <ion-item class="probar" href="/tabs/menutab">
+                  <ion-label color="tertiary">Probar</ion-label>
+                </ion-item>
+              </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-item>
 
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-modal10">
       <ion-icon name="apps-sharp"></ion-icon>
       <ion-label style="padding-left:10px;">
         Tic-tac-toe
       </ion-label>
+      <ion-modal trigger="open-modal10">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-button href="/tabs/activitiestab">Volver</ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+              </ion-buttons>
+              <ion-title>Tic-tac-toe</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label>Preferencia</ion-label>
+              <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+              <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+            </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Dificultad</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="Fácil">Fácil</ion-select-option>
+                  <ion-select-option value="Medio">Medio</ion-select-option>
+                  <ion-select-option value="Dificil">Difícil</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <div class="container">
+                <ion-item class="probar" href="/tabs/menutab">
+                  <ion-label color="tertiary">Probar</ion-label>
+                </ion-item>
+              </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-item>
 
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-modal11">
       <ion-icon name="calculator-outline"></ion-icon>
       <ion-label style="padding-left:10px;">
         Suma/Resta Consecutiva
       </ion-label>
+      <ion-modal trigger="open-modal11">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-button href="/tabs/activitiestab">Volver</ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+              </ion-buttons>
+              <ion-title>Suma/Resta Consecutiva</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-item>
+              <ion-label>Preferencia</ion-label>
+              <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+              <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+            </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Dificultad</ion-label>
+                <ion-select placeholder="Seleccione una opción">
+                  <ion-select-option value="Fácil">Fácil</ion-select-option>
+                  <ion-select-option value="Medio">Medio</ion-select-option>
+                  <ion-select-option value="Dificil">Difícil</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-label position="stacked">Operaciones</ion-label>
+                  <ion-item>
+                    <ion-label>Suma</ion-label>
+                    <ion-toggle slot="end" value="Suma"></ion-toggle>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Resta</ion-label>
+                    <ion-toggle slot="end" value="Resta"></ion-toggle>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Multiplicación</ion-label>
+                    <ion-toggle slot="end" value="Multiplicación"></ion-toggle>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>División</ion-label>
+                    <ion-toggle slot="end" value="División"></ion-toggle>
+                  </ion-item>
+              </ion-item>
+              <div class="container">
+                <ion-item class="probar" href="/tabs/menutab">
+                  <ion-label color="tertiary">Probar</ion-label>
+                </ion-item>
+              </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-item>
 
-    <ion-item button detail href="/tabs/menutab">
+    <ion-item button detail id="open-modal12">
       <ion-icon name="remove-circle-outline"></ion-icon>
       <ion-label style="padding-left:10px;">
         Signos matemáticos
       </ion-label>
     </ion-item>
+    <ion-modal trigger="open-modal12">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+              <ion-button href="/tabs/activitiestab">Volver</ion-button>
+            </ion-buttons>
+            <ion-buttons slot="end">
+              <ion-button href="/tabs/activitiestab">Guardar</ion-button>
+            </ion-buttons>
+            <ion-title>Signos matemáticos</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <ion-item>
+            <ion-label>Preferencia</ion-label>
+            <ion-icon button class="like" slot="end" name="heart-circle-outline"></ion-icon>         
+            <ion-icon button class="dislike" slot="end" name="heart-dislike-circle-outline"></ion-icon>
+          </ion-item>
+            <ion-item>
+              <ion-label position="stacked">Dificultad</ion-label>
+              <ion-select placeholder="Seleccione una opción">
+                <ion-select-option value="Fácil">Fácil</ion-select-option>
+                <ion-select-option value="Medio">Medio</ion-select-option>
+                <ion-select-option value="Dificil">Difícil</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-label position="stacked">Operaciones</ion-label>
+                <ion-item>
+                  <ion-label>Suma</ion-label>
+                  <ion-toggle slot="end" value="Suma"></ion-toggle>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Resta</ion-label>
+                  <ion-toggle slot="end" value="Resta"></ion-toggle>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Multiplicación</ion-label>
+                  <ion-toggle slot="end" value="Multiplicación"></ion-toggle>
+                </ion-item>
+                <ion-item>
+                  <ion-label>División</ion-label>
+                  <ion-toggle slot="end" value="División"></ion-toggle>
+                </ion-item>
+            </ion-item>
+            <div class="container">
+              <ion-item class="probar" href="/tabs/menutab">
+                <ion-label color="tertiary">Probar</ion-label>
+              </ion-item>
+            </div>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
 </ion-content>

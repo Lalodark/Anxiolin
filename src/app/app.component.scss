@@ -1,0 +1,10 @@
+ion-menu ion-item.selected ion-icon{
+    color: rgba(var(--ion-color-mainanx-rgb), 0.14);
+}
+ion-menu ion-item.selected ion-icon{
+    color: var(--ion-color-mainanx);
+}
+
+ion-item.selected{
+    color: var(--ion-color-mainanx);
+}

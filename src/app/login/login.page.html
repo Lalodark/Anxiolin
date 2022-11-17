@@ -1,9 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content class="background">
+  <div class="container">
+    <ion-img class="logo" src="/./assets/images/LogoSinFondo.png"></ion-img>
+    <div class="container">
+        <ion-img class="letra" src="/./assets/images/AnxiolinLetra2.png"></ion-img>     
+    </div>
+  </div>
+    <div class="container con-input">
+      <ion-item class="loginput">
+        <ion-label position="floating">E-Mail</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item class="loginput">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </div>
+    <div class="container con-bttn">
+      <ion-button size= "large" class="btn" shape= "round" routerLink="/tabs/menutab" routerDirection="root" expand="block">Iniciar sesión</ion-button>
+    </div>
 </ion-content>

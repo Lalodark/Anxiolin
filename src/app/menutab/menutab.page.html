@@ -1,14 +1,180 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button id="title"></ion-menu-button>
     </ion-buttons>
-    <ion-title>
+    <ion-title id="title">
       Menú
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-header>
+    <h1>
+      ¡Bienvenido, Gonzalo!
+    </h1>
+  </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card id="open-modal1">
+          <img class="c1" src="/./assets/images/Panico.png">
+          <div class="card-title">Ataques de Pánico</div>
+          <ion-modal trigger="open-modal1">
+            <ng-template>
+              <ion-header>
+                <ion-toolbar color="primary">
+                  <ion-buttons>
+                    <ion-button href="/tabs/menutab">Volver</ion-button>
+                  </ion-buttons>
+                  <ion-title>Ataques de pánico</ion-title>
+                </ion-toolbar>
+              </ion-header>
+              <ion-content class="ion-padding">
+                <ion-text>
+                  <br>Un ataque de pánico es un episodio repentino de miedo intenso que provoca reacciones físicas graves cuando no existe ningún peligro real o causa aparente. Los ataques de pánico pueden provocar mucho miedo. Cuando se presenta un ataque de pánico, puedes sentir que estás perdiendo el control, que estás teniendo un ataque cardíaco o, incluso, que vas a morir.<br>
+
+                  <br>Muchas personas tienen solo uno o dos ataques de pánico en toda su vida, y el problema quizás desaparece cuando se resuelve una situación estresante. Sin embargo, si tienes ataques de pánico inesperados y recurrentes, y pasas mucho tiempo con miedo constante de sufrir otro ataque, es probable que tengas una afección llamada «trastorno de pánico».<br>
+
+                  <br>A pesar de que los ataques de pánico en sí mismos no ponen en riesgo la vida, pueden provocar mucho miedo y afectar, de manera significativa, tu calidad de vida. Sin embargo, el tratamiento puede ser muy eficaz.<br>
+                </ion-text>
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card id="open-modal2">
+          <img class="c2" src="/./assets/images/Ansiedad.png">
+          <div class="card-title">Ataques de Ansiedad</div>
+          <ion-modal trigger="open-modal2">
+            <ng-template>
+              <ion-header>
+                <ion-toolbar color="primary">
+                  <ion-buttons>
+                    <ion-button href="/tabs/menutab">Volver</ion-button>
+                  </ion-buttons>
+                  <ion-title>Ataques de ansiedad</ion-title>
+                </ion-toolbar>
+              </ion-header>
+              <ion-content class="ion-padding">
+                <ion-text>
+                  <br>Sentir ansiedad de modo ocasional es una parte normal de la vida. Sin embargo, las personas con trastornos de ansiedad con frecuencia tienen preocupaciones y miedos intensos, excesivos y persistentes sobre situaciones diarias. Con frecuencia, en los trastornos de ansiedad se dan episodios repetidos de sentimientos repentinos de ansiedad intensa y miedo o terror que alcanzan un máximo en una cuestión de minutos (ataques de pánico).<br>
+
+                  <br>Estos sentimientos de ansiedad y pánico interfieren con las actividades diarias, son difíciles de controlar, son desproporcionados en comparación con el peligro real y pueden durar un largo tiempo. Con el propósito de prevenir estos sentimientos, puede suceder que evites ciertos lugares o situaciones. Los síntomas pueden empezar en la infancia o la adolescencia y continuar hasta la edad adulta.<br>
+
+                  <br>Algunos ejemplos del trastorno de ansiedad son: trastorno de ansiedad generalizada, trastorno de ansiedad social (fobia social), fobias específicas y trastorno de ansiedad por separación. Puedes tener más de un trastorno de ansiedad. A veces, la ansiedad surge de una enfermedad que requiere tratamiento.<br>
+
+                  <br>Cualquiera sea el tipo de ansiedad que padezcas, un tratamiento puede ayudar.<br>
+                </ion-text>
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card id="open-modal3">
+          <img class= "c3" src="/./assets/images/Consejos.png">
+          <div class="card-title">Consejos</div>
+          <ion-modal trigger="open-modal3">
+            <ng-template>
+              <ion-header>
+                <ion-toolbar color="primary">
+                  <ion-buttons>
+                    <ion-button href="/tabs/menutab">Volver</ion-button>
+                  </ion-buttons>
+                  <ion-title>Consejos</ion-title>
+                </ion-toolbar>
+              </ion-header>
+              <ion-content class="ion-padding">
+                <ion-text>
+                  <ul>
+                    <li>Busca tratamiento para los ataques de pánico/ansiedad cuanto antes para ayudar a evitar que empeoren o se vuelvan más frecuentes.</li>
+                    <li>Cumple con el plan de tratamiento para ayudar a evitar las recaídas o el agravamiento de los síntomas de los ataques de pánico/ansiedad.</li>
+                    <li>Haz actividad física regularmente, ya que puede contribuir a protegerte de la ansiedad.</li>
+                    <li>Pide ayuda enseguida. La ansiedad, como muchos otros trastornos mentales, puede ser más difícil de tratar si te demoras.</li>
+                    <li>Mantente activo. Participa en actividades que disfrutes y que te hagan sentir bien contigo mismo. Disfruta la interacción social y tus afectos, que pueden aliviar tus preocupaciones.</li>
+                    <li>Evita el consumo de alcohol o drogas. El consumo de alcohol y drogas puede provocar ansiedad o empeorarla. Si eres adicto a cualquiera de estas sustancias, la idea de dejar de consumir puede hacerte sentir ansioso. Si no puedes dejar de consumir por tu cuenta, consulta con tu médico o busca un grupo de apoyo para que te ayuden.</li>
+                    <li>Medita regularmente, así podras ser más consciente de tus emociones y te podrás recuperar con mayor facilidad.</li>
+                    <li>Escribe en un diario como te sientes, esto con el fin de ser consciente de tus emociones y de vaciar la mente.</li>
+                  </ul>
+                </ion-text>
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card id="open-modal4">
+          <img class="c4" src="/./assets/images/Ayuda.png">
+          <div class="card-title">Centros de ayuda</div>
+          <ion-modal trigger="open-modal4">
+            <ng-template>
+              <ion-header>
+                <ion-toolbar color="primary">
+                  <ion-buttons>
+                    <ion-button href="/tabs/menutab">Volver</ion-button>
+                  </ion-buttons>
+                  <ion-title>Centros de ayuda</ion-title>
+                </ion-toolbar>
+              </ion-header>
+              <ion-content class="ion-padding">
+                <ion-text>
+                  <br>• Hospital General de Agudos “Dr. Juan A. Fernández”<br>
+                  Cerviño 3356 – Tel.: 4808-2600 – SM: Int. 2220 GUARDIA: 4808-2605/ 2606<br>
+                  Este establecimiento cuenta con psiquiatra y psicólogo de guardia<br>
+
+                  <br>• Hospital General de Agudos “Dr. Bernardino Rivadavia”<br>
+                  Av. Las Heras 2670 – Tel.: 4809-2000/01 SM: Int. 2189 GUARDIA: 4809-2002<br>
+                  Este establecimiento cuenta con Equipo de Guardia Interdisciplinario de Salud Mental (Psicólogo, Psiquiatra y Asistente Social)<br>
+
+                  <br>• Hospital General de Agudos “Dr. Ignacio Pirovano”<br>
+                  Monroe 3555 Tel.: 4542-5552/ 9270/ 4542-5594 GUARDIA: 4541-5552/ 2772/ 9279<br>
+                  Este establecimiento cuenta con Equipo de Guardia Interdisciplinario de Salud Mental (Psicólogo, Psiquiatra y Asistente Social)<br>
+                  Talleres de varios temas http://www.talleresdelpirovano.com.ar/<br>
+
+                  <br>• Hospital de Emergencias Psiquiátricas “Dr. Torcuato de Alvear”<br>
+                  Av. Warnes 2630 – Tel.: 4521-5555/ 5934<br>
+                  Este establecimiento cuenta con Equipo de Guardia Interdisciplinario de Salud Mental<br>
+                  (Psicólogo, Psiquiatra y Asistente Social)<br>
+
+                  <br>• Hospital General de Agudos “Dr. Enrique Tornú”<br>
+                  Combatientes de Malvinas 3002 Tel.: 4521-3600/8700 (Conmutador)<br>
+                  SM: Int. 104/198 4521-7947/2401/7039 (Dirección) GUARDIA: 4521-6666 / 4521-8700 Int. 217<br>
+                  Este establecimiento cuenta con Equipo de<br>
+                  Guardia Interdisciplinario de Salud Mental (Psicólogo, Psiquiatra y Asistente Social)<br>
+
+                  <br>• Hospital General de Agudos “Dr. Carlos Durand”<br>
+                  Av. Díaz Vélez 5044 – Tel.: 4982-5555/5655 (Conmutador) 4982-1050 – 4981-2670 SM: Int. 439 (Planta baja) Int. 218 (2do. piso) GUARDIA: 4982-0457/ 5555/ 5655<br>
+                  Este establecimiento cuenta con psicólogo y psiquiatra de guardia.<br>
+
+                  <br>• Hospital General de Agudos “Dr. Abel Zubizarreta”<br>
+                  Nueva York 3952 – Tel.: 4501-6773/5775 4501-5775/0683/5985 SM: Int. 158 GUARDIA: 4501-5555 / 4501-5775 – Int. 157<br>
+                  Este establecimiento cuenta con Equipo de Guardia Interdisciplinario de Salud Mental (Psicólogo, Psiquiatra y Asistente Social)<br>
+
+                  <br>• Hospital General de Agudos “Dr. Dalmacio Vélez Sarsfield”<br>
+                  Calderón de la Barca 1550 Tel.: 4639-8700/05 SM: Int. 382 GUARDIA: 4648-2456<br>
+                  Este establecimiento cuenta con psiquiatra y asistente social de Guardia<br>
+                </ion-text>
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Cita del día</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      "Uno está mucho menos ansioso si se siente perfectamente libre de estar ansioso" - Alan Watts
+    </ion-card-content>
+  </ion-card>
   
 </ion-content>

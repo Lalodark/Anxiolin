@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { ModalController, IonModal } from '@ionic/angular';
+import { OverlayEventDetail } from '@ionic/core/components';
 import { RouterModule, Routes } from '@angular/router';
 
 @Component({

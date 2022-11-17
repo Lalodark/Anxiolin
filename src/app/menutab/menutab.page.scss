@@ -1,0 +1,38 @@
+#title{
+    color: #ffffff;
+}
+
+ion-toolbar{
+    background-color: var(--ion-color-primary);
+}
+
+.card-title{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+    text-align: center;
+}
+
+h1{
+    margin-left:3%;
+}
+
+.c1{
+    background: rgb(201,115,255);
+    background: linear-gradient(90deg, rgba(201,115,255,1) 0%, rgba(117,0,192,1) 100%);
+}
+
+.c2{
+    background: rgb(212,237,83);
+    background: linear-gradient(90deg, rgba(212,237,83,0.6222864145658263) 0%, rgba(201,115,255,1) 100%);
+}
+
+.c3{
+    background: rgb(178,83,237);
+    background: linear-gradient(90deg, rgba(178,83,237,1) 0%, rgba(59,237,140,0.8127626050420168) 100%);
+}
+
+.c4{
+    background: rgb(48,161,99);
+    background: linear-gradient(90deg, rgba(48,161,99,0.8911939775910365) 0%, rgba(237,191,107,1) 100%);
+}

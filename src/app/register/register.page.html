@@ -1,9 +1,50 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content class="background">
+  <div class="container con-input">
+    <ion-header>
+      <h1>
+        Registrarse
+      </h1>
+    </ion-header>
+    <ion-item class="loginput">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
+    <ion-item class="loginput">
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item class="loginput">
+      <ion-label position="floating">Fecha de Nacimiento</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item class="loginput">
+      <ion-label position="stacked">Pais</ion-label>
+      <ion-select placeholder="Seleccione un país">
+        <ion-select-option value="Arg">Argentina</ion-select-option>
+        <ion-select-option value="Uru">Uruguay</ion-select-option>
+        <ion-select-option value="Per">Perú</ion-select-option>
+        <ion-select-option value="Par">Paraguay</ion-select-option>
+        <ion-select-option value="Chi">Chile</ion-select-option>
+        <ion-select-option value="Bol">Bolivia</ion-select-option>
+        <ion-select-option value="Ven">Venezuela</ion-select-option>
+        <ion-select-option value="Col">Colombia</ion-select-option>
+        <ion-select-option value="Ecu">Ecuador</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item class="loginput">
+      <ion-label position="floating">E-Mail</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item class="loginput">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item class="loginput">
+      <ion-label position="floating">Repetir Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </div>
+  <div class="container con-bttn">
+    <ion-button size= "large" class="btn" shape= "round" routerLink="/tabs/menutab" routerDirection="root" expand="block">Registrarse</ion-button>
+  </div>
 </ion-content>
