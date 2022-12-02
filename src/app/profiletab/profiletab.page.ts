@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { AuthenticateService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-profiletab',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfiletabPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController,
+    private authService: AuthenticateService) { }
 
   ngOnInit() {
+  }
+
+  logout() {
+    this.authService.logoutUser()
+      .then(res => {
+        console.log(res);
+        this.navCtrl.navigateBack('');
+      })
+      .catch(error => {
+        console.log(error);
+      })
   }
 
 }

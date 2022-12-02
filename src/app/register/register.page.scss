@@ -33,7 +33,7 @@ h1{
  
 .con-input{
     position: absolute;
-    bottom: 15%;
+    bottom: 25%;
     width: 95%;
     left: 2.5%;
     justify-content: center;
@@ -55,8 +55,21 @@ h1{
     margin-top: 20px;
     margin-bottom: 20px;
     position: absolute;
-    bottom: 3%;
+    bottom: 5%;
     width: 95%;
     left: 2.5%;
     justify-content: center;
 }
+
+.error-message{
+    color:red;
+}
+
+.success-message{
+    color:green;
+}
+
+.go-to-login{
+    color:#ffffffc2;
+}
+

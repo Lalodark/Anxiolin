@@ -5,17 +5,31 @@
         <ion-img class="letra" src="/./assets/images/AnxiolinLetra2.png"></ion-img>     
     </div>
   </div>
+  <form class="form" [formGroup]="validations_form" (ngSubmit)="loginUser(validations_form.value)">
     <div class="container con-input">
       <ion-item class="loginput">
         <ion-label position="floating">E-Mail</ion-label>
-        <ion-input type="email"></ion-input>
+        <ion-input formControlName="email" type="email"></ion-input>
       </ion-item>
       <ion-item class="loginput">
         <ion-label position="floating">Password</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input formControlName="password" type="password"></ion-input>
       </ion-item>
+      <div class="validation-errors">
+        <ng-container *ngFor="let validation of validation_messages.password">
+            <div class="error-message"
+            *ngIf="validations_form.get('password').hasError(validation.type) && (validations_form.get('password').dirty || validations_form.get('password').touched)">
+            {{ validation.message }}
+            </div>
+        </ng-container>
+      </div>
     </div>
     <div class="container con-bttn">
-      <ion-button size= "large" class="btn" shape= "round" routerLink="/tabs/menutab" routerDirection="root" expand="block">Iniciar sesión</ion-button>
+      <ion-button size= "large" class="btn" shape= "round" type="submit" [disabled]="!validations_form.valid" routerDirection="root" expand="block">Iniciar sesión</ion-button>
+      <label class="error-message">{{errorMessage}}</label>
+      <p class="go-to-register">
+        ¿No tienes una cuenta? <a href="/register">Create una.</a>
+      </p>
     </div>
+  </form>
 </ion-content>

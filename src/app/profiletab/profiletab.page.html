@@ -82,7 +82,7 @@
       </ion-modal>
     </ion-item>
   
-    <ion-item button detail="false" class="close-session" href="">
+    <ion-item button detail="false" class="close-session" (click)="logout()">
       <ion-label color="danger">Cerrar sesión</ion-label>
       <ion-icon color="danger" name="close-circle-outline" slot="end"></ion-icon>
     </ion-item>
